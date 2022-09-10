@@ -8,7 +8,7 @@ with open('requirements.txt') as fid:
 
 setup(
     name='treeFunc',
-    version='0.0.1',
+    version='0.0.3',
     description='Tree feature functions',
     author='tree4101',
     author_email='treegi4101@gmail.com',
