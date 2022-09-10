@@ -4,3 +4,11 @@
 
 # 安裝方式
 pip install git+ssh://git@github.com/treegi/treeFunc.git
+
+# 版本差異
+
+* 0.0.1
+    最初版，包含datetime切割功能
+
+* 0.0.2
+    增加__init__.py檔案
