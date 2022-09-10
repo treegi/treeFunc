@@ -2,13 +2,13 @@ from typing import List, Dict, Union
 from datetime import date, datetime, timedelta
 from dateutil.rrule import rrule, DAILY, MONTHLY
 
-def date_range(start_date, end_date):
+def dateRange(start_date, end_date):
     return [dt.date() for dt in rrule(DAILY, dtstart=start_date, until=end_date)]
 
-def month_range(start_date, end_date):
+def monthRange(start_date, end_date):
     return [dt.date() for dt in rrule(MONTHLY, dtstart=start_date, until=end_date)]
 
-def season_range(start_date, end_date):
+def seasonRange(start_date, end_date):
 
     if isinstance(start_date, datetime):
         start_date = start_date.date()
@@ -26,7 +26,7 @@ def season_range(start_date, end_date):
 
     return ret
 
-from iterFunc import pairwise
+from treeFunc.iterFunc import pairwise
 
 def splitDatetimeMonth(start_datetime : datetime, end_datetime : datetime, part_size = 100) -> List[datetime]:
     """splite datetime to formal size
